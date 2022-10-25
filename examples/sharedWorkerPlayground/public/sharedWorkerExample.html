@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="divTable">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell"><h1>dataBridges Shared-Workers Playground</h1></div>
+                <div class="divTableCell divTableCellRight">
+                    Browser Tabs: <small style="padding-right: 10px;"><strong><span id="workerCount">0</span></strong></small>
+                    <input type="button" value="Open New Window" onclick="javascript:window.open('sharedWorkerExample.html')">
+                </div>
+                <div class="divTableCell divTableCellRight">
+                    Databridge : <small style="padding-right: 10px;"><strong><span id="dbConnStatus"></span></strong></small>
+                    <input type="button" value="Logout" onclick="logOut()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divTable">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell">
+                    <input type="button" value="Subscribed Channel List" onclick="getChannelList()">
+                </div>
+            </div>
+            <br />
+            <div class="divTableRow">
+                <div class="divTableCell">
+                    Channel Name
+                    <input type="text" id="channelname" name="channelname" value="prs:test">
+                    <input type="button" value="Subscribe" onclick="subscribeToChannel()">
+                </div>
+            </div>
+            <br />
+            <div class="divTableRow">
+                <div class="divTableCell">
+                    Channel Name
+                    <input type="text" id="channelname" name="channelname" value="prs:test">
+                    <input type="button" value="UnSubscribe" onclick="unSubscribeFromChannel()">
+                </div>
+            </div>
+            <br />
+            <div class="divTableRow">
+                <div class="divTableCell">
+                    Event Name
+                    <input type="text" id="payload" name="payload" value="Hi to all">
+                    Payload
+                    <input type="text" id="payload" name="payload" value="Hi to all">
+                    <input type="button" value="Publish" onclick="publishToChannel()">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <br />
+    <label>Log Board</label>
+    <div id="loggerdiv"></div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+    <script src="date.format.js"></script>
+    <script src="sharedWorkerExample.js"></script>
+</body>
+</html>

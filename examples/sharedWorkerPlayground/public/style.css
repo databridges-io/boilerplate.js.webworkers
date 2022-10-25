@@ -1,0 +1,74 @@
+
+html, body {
+    height: 98%;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+#loggerdiv {
+    font-size: 0.855rem;
+    font-family: 'Courier', sans-serif;
+    min-height: 60%;
+    width: 100%;
+    border: thin solid rgb(216, 215, 215);
+    overflow: scroll;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #000;
+    color: #79de4a;
+}
+
+.logdate {
+    color: #d0c5c5;
+    line-height: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    width: 10rem;
+}
+
+.input-field {
+    position: relative;
+    margin-top: 2rem;
+}
+.input-field input {
+    padding: 0.8rem;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    color: white;
+    border-radius: 4px;
+    margin-top: 2rem;
+    padding: 0.4rem;
+}
+h1 {
+    padding: 2px !important;
+}
+
+.divTable {
+    display: table;
+    width: 100%;
+}
+.divTableRow {
+    display: table-row;
+}
+
+.divTableCell {
+    border: 0px solid #999999;
+    display: table-cell;
+    padding: 1px 10px;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
+
+.divTableCellRight {
+    text-align: right;
+}

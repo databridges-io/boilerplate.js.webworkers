@@ -1,0 +1,54 @@
+
+html, body {
+    height: 100%;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+#loggerdiv {
+    font-size: 0.855rem;
+    font-family: 'Courier', sans-serif;
+    height: 10%;
+    width: 100%;
+    border: thin solid rgb(216, 215, 215);
+    overflow: scroll;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #000;
+    color: #79de4a;
+}
+
+#map {
+    min-height: 80%;
+    width: 100%;
+}
+
+.logdate {
+    color: #d0c5c5;
+    line-height: 15px;
+}
+
+.divTable {
+    display: table;
+    width: 100%;
+}
+
+h1 {
+    padding: 2px !important;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableCell {
+    border: 0px solid #999999;
+    display: table-cell;
+    padding: 1px 10px;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
+
+.divTableCellRight {
+    text-align: right;
+}
